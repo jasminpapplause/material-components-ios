@@ -612,7 +612,7 @@ const CGSize MDCButtonNavigationItemViewPointerEffectHighlightRectInset = {-24, 
 }
 
 - (void)setImage:(UIImage *)image {
-  _image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    _image = image; // [image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
 
   // _image updates unselected state
   // _image updates selected state IF there is no selectedImage
@@ -626,7 +626,7 @@ const CGSize MDCButtonNavigationItemViewPointerEffectHighlightRectInset = {-24, 
 }
 
 - (void)setSelectedImage:(UIImage *)selectedImage {
-  _selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    _selectedImage = selectedImage; // [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
   if (self.selected) {
     self.iconImageView.image = _selectedImage;
     self.iconImageView.tintColor = self.selectedItemTintColor;

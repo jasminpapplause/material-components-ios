@@ -116,7 +116,7 @@ static UIImage *_Nullable MDCImageForItem(UITabBarItem *_Nonnull item) {
 
 - (void)updateWithTabBarItem:(UITabBarItem *)item {
   UIImage *image = MDCImageForItem(item);
-  self.imageView.image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    self.imageView.image = image; // [image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
   self.titleLabel.text = item.title;
   [self setNeedsLayout];
 }

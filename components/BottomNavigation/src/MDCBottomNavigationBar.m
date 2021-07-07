@@ -102,7 +102,7 @@ static BOOL gEnablePerformantShadow = NO;
 - (void)commonMDCBottomNavigationBarInit {
   _itemsContentHorizontalMargin = kItemsHorizontalMargin;
   _selectedItemTintColor = [UIColor blackColor];
-  _unselectedItemTintColor = [UIColor grayColor];
+  _unselectedItemTintColor = [UIColor whiteColor];
   _selectedItemTitleColor = _selectedItemTintColor;
   _titleVisibility = MDCBottomNavigationBarTitleVisibilitySelected;
   _alignment = MDCBottomNavigationBarAlignmentJustified;
